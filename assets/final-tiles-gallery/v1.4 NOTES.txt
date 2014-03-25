@@ -1,0 +1,1 @@
+Please note that from version 1.4 we removed the 'shadow' and 'shadowColor' options, as we believe  it's better to style the gallery via CSS achieving same results.

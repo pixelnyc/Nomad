@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+   Side global
+   ------------------------------------------------------- */
+
+
+
+
+/* News & Related
+   ----------------------- */
+
+#side-products,
+.is-in-content #side-news,
+.catalog-product-view #side-news {
+    display: none;
+}
+
+.is-in-content #side-products,
+.catalog-product-view #side-products {
+    display: block;
+}
+
+.playlist-open .is-in-content #side-products,
+.playlist-open .catalog-product-view #side-products {
+    display: none;
+}
+
+/* Music illu
+   ----------------------- */
+
+.side-audio-player-illu {
+    z-index: 2;
+    position: absolute;
+    top: 390px;
+    top: auto;
+    right: 0;
+    bottom: 126px;
+    bottom: 150px;
+    left: 0;
+    width: 274px;
+    height: 110px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.side-audio-player-illu img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.playlist-open .side-audio-player-illu {
+    display: none!important;
+}
+
+/* Music Player
+   ----------------------- */
+
+.side-audio-player {
+/*    position: absolute;
+    right: 0;
+    bottom: 142px;
+    bottom: 250px;
+    left: 20px;*/
+    /*width: 400px;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    /*background-color: #fff;*/
+	float:right;
+	margin-top:8px;
+	margin-right:22px;
+}
+
+
+
+.side-audio-player .title-info{
+	float:left;
+	text-align:right;
+	/*width:150px;*/
+	line-height:18px;
+	margin-right:10px;
+	margin-top:1px;
+}
+
+.side-audio-player .title-info .artist{
+	
+	font-size:10px;	
+}
+
+
+.player-info {
+    display: block;
+    height: 34px;
+}
+
+.player-info >:first-child {
+    height: 24px;
+    margin-right: 4px;
+    line-height: 24px;
+}
+
+.player-info .bm-cont {
+    margin-bottom: 8px;
+    line-height: 13px;
+}
+
+.player-info .bm-cont * {
+    display: block;
+    color: #0f0f12;
+}
+
+.player-info .bm-cont .songname {
+    color: #3a3e48;
+	display:none;
+}
+
+.side-audio-player .pochette{
+ float:left;	
+}
+
+
+
+.player-core {
+	width:189px;
+    position: relative;
+    height: 30px;
+	float:left;
+}
+
+.player-core .pl-act {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #0f0f12 url(../images/header/sprite-side-player.png) no-repeat top left;
+    -webkit-background-clip: border;
+    -moz-background-clip: border;
+    background-clip: border;
+    cursor: pointer;
+}
+
+.player-core .pl-act:hover {
+    background-color: #1d5ea8;
+}
+
+.player-core .pl-act,
+.player-core .pl-act:hover {
+    opacity: 0.99!important;
+    filter: alpha(opacity=99);
+}
+
+.player-core .next {
+    left: 48px;
+    background-position: -48px 0;
+}
+
+.player-core .export {
+    right: 24px;
+    left: auto;
+    background-position: -72px 0;
+}
+
+.player-core .playlist {
+    right: 0;
+    left: auto;
+    background-position: -96px 0;
+}
+
+.playlist-open .player-core .playlist {
+    opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+/* Play/Pause */
+
+.player-core .play {
+    background-position: -24px 0;
+}
+
+.playing .player-core .play {
+    background-position: -24px -24px;
+}
+
+.buffering .player-core .play,
+.buffering.player-core .play {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #070f18 url(../images/header/play-loader.gif) no-repeat 2px 2px;
+    -webkit-background-clip: border;
+    -moz-background-clip: border;
+    background-clip: border;
+}
+
+.player-core .play,
+.player-core .pause {
+    left: 24px;
+}
+
+.player-core.onplay .pause,
+.player-core .play {
+    display: block;
+}
+
+/* Défilement */
+
+.player-core .status {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    left: 79px;
+    height: 3px;
+    background-color: #cecfd1;
+    cursor: pointer;
+}
+
+.player-core .status .actual {
+    display: block;
+    height: 100%;
+    background-color: #1d5ea8;
+}
+
+/* Playlist */
+
+.playlist-open .side-audio-player {
+    top: 249px;
+    border-bottom: 0;
+}
+
+.playlist-open #side-news,
+.playlist-open #side-newsletter {
+    display: none;
+}
+
+.player-playlist {
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    bottom: -155px;
+    left: -20px;
+    max-height: 0;
+    background-color: #fff;
+}
+
+.playlist-open .player-playlist {
+    max-height: none;
+}
+
+.player-playlist > .after,
+.player-playlist > .before {
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 5px;
+    opacity: 0;
+    background-color: transparent;
+    background-image: url(../images/header/sprite-shadow-playlist.png);
+    background-repeat: repeat-x;
+    filter: alpha(opacity=0);
+}
+
+.playlist-open .player-playlist > .after,
+.playlist-open .player-playlist > .before {
+    visibility: visible;
+    opacity: 0.99;
+    filter: alpha(opacity=99);
+}
+
+.player-playlist > .before {
+    top: 0;
+    background-position: top center;
+}
+
+.player-playlist > .after {
+    bottom: 0;
+    background-position: bottom center;
+}
+
+.inner-pp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #f0f1f1;
+}
+
+.inner-pp .inner-pp-content {
+    padding-right: 16px;
+}
+
+.clrz-mp3-player-index .inner-pp .inner-pp-content {
+    padding-right: 0;
+}
+
+.inner-pp .item {
+    display: block;
+    padding-right: 10px;
+    font-size: 10px;
+    line-height: 20px;
+    color: #383f46;
+}
+
+.inner-pp li {
+    clear: both;
+    position: relative;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+    background-color: #f0f1f1;
+}
+
+.inner-pp li.playing {
+    background: #fff url(../images/header/arrow-playlist.png) 7px 7px no-repeat;
+}
+
+.inner-pp .clrzsound_playing,
+.inner-pp .clrzsound_paused {
+    color: #1d5ea8;
+}
+
+.inner-pp li:hover {
+    background: #fff url(../images/header/arrow-playlist.png) 7px 7px no-repeat;
+}
+
+.inner-pp li:hover a {
+    color: #1d5ea8;
+}
+
+.inner-pp .item-buy {
+    float: right;
+    position: relative;
+    top: 3px;
+    right: 6px;
+    width: 11px;
+    height: 14px;
+    text-indent: -9999px;
+    background: transparent url(../images/header/icn-buy.png) top center no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------
+   Footer
+   ------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------
+   Full MP3 Player
+   ------------------------------------------------------- */
+
+.clrz-mp3-player-index {
+    height: 100%;
+    padding: 0;
+    min-height: 0;
+    min-width: 280px;
+    background: #f0f1f1;
+}
+
+.clrz-mp3-player-index .main-content {
+    padding: 0;
+    background-color: #fff;
+}
+
+.clrz-mp3-player-index .player-playlist {
+    padding: 0;
+}
+
+.clrz-mp3-player-index .inner-pp,
+.clrz-mp3-player-index .player-playlist,
+.clrz-mp3-player-index .side-audio-player {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    max-height: 100000px;
+}
+
+.clrz-mp3-player-index .side-audio-player {
+    width: auto;
+    margin: 0;
+    padding: 130px 0 0;
+    border: 0;
+    background: #fff url(../images/illustrations/music-player.png) no-repeat left top;
+}
+
+.clrz-mp3-player-index .player-playlist > .after,
+.clrz-mp3-player-index .player-playlist > .before {
+    display: none;
+}
+
+.clrz-mp3-player-index .player-info,
+.clrz-mp3-player-index .inner-pp,
+.clrz-mp3-player-index h2 {
+    padding: 0 20px;
+}
+
+.clrz-mp3-player-index .player-core {
+    margin: 0 20px;
+}
+
+.clrz-mp3-player-index .inner-pp {
+    background: #f0f1f1;
+}
+
+.clrz-mp3-player-index .side-audio-player-illu,
+.clrz-mp3-player-index .side-audio-player h2,
+.clrz-mp3-player-index .player-core .playlist,
+.clrz-mp3-player-index .player-core .export {
+    display: none;
+}
+
+.clrz-mp3-player-index .player-core .status {
+    right: 0;
+}
+
+.clrz-mp3-player-index #sm2-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+
+

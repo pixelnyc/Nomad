@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+  <!-- Demo CSS -->
+
+	<link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" />
+
+
+
+</head>
+<body class="loading">
+
+<div class="flexslider" style="width:600px;">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	  <video autoplay loop muted="" class="stretchHeight" style="visibility: visible;">
+					<source src="https://l-videos.myspacecdn.com:443/videos02/7/b5791aa9164b479c9b62695b5c0e93ef/vid.mp4?t=1386995736_04029b3f9fa2bd81139870a218759c1f" type="video/mp4">
+					<source src="https://l-videos.myspacecdn.com:443/videos02/7/b5791aa9164b479c9b62695b5c0e93ef/astro-videocover.webm?t=1386995736_325cdd27f3d1fc71f8eb2b84d9247916" type="video/webm">
+				</video>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>

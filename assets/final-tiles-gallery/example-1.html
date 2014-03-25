@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Tiles Gallery | Example</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Example CSS -->
+        <style>
+        html { font-family: Arial, sans-serif; background: #111; }
+        #final-tg  { width: 80%; margin: 10px auto; display: block; }
+
+        #final-tg ul { margin: 0; padding: 0; height: 50px; }
+        #final-tg li { list-style-type: none; }
+        #final-tg li a { color: #ccc; float: left; margin: 0 20px 0 0; padding: 5px 10px; text-decoration: none; }
+        #final-tg li a:hover, #final-tg li a.selected { background: #333; color: #fff; }
+        
+        #final-tg .tile .caption {
+	        position: absolute;
+	        bottom: 0;
+	        left: 0;
+	        width: 100%;
+	        background: url(images/opaque.png);
+	        font-family: cursive;
+	        opacity:0;
+	        transition: all .3s;
+	        height: 100%;
+        }
+        #final-tg .tile > * {
+	        border: 2px solid #444;
+	        border-radius: 4px;
+        }
+        #final-tg .tile a:hover .caption {
+        	opacity:1;
+        }
+        #final-tg .tile .caption p {
+	        margin:10px;
+	        color: #fff;
+	        font-size: 14px;	    
+        }
+        .load {
+	        width: 300px;
+	        display: block;
+	        margin: 20px auto;
+	        color: #fff;
+	        text-decoration: none;
+	        background: #333;
+	        padding: 10px;
+	        text-align: center;
+        }
+        .ftg-loading-panel {
+		    position: fixed;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    background: url(images/overlay.png);
+		    color: #fff;
+		    z-index: 1000;
+		    text-align: center;
+		    font-size: 26px;
+		    font-weight: bold;
+		    padding:0px;
+		    border-top:5px solid #666;
+		}
+		h1 { color: #fff; }
+        h2 { color: yellow; font-size: 16px; }
+        </style>
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.finalTilesGallery.js"></script>
+    </head>
+    <body>    	
+        <section id="final-tg">
+        		<h1>Infinite scrolling</h1>
+                <h2>IMPORTANT: It must be run via http:// not file:// or AJAX calls won't work due to browser security settings</h2>
+                <ul class="ftg-filters">
+                    <li><a class="selected" href="#">All</a></li>
+                    <li><a href="#set-1">Filter 1</a></li>
+                    <li><a href="#set-2">Filter 2</a></li>
+                    <li><a href="#set-3">Filter 3</a></li>
+                </ul>
+
+                <div class="ftg-items">
+                    <article class="tile ftg-set-1">
+                        <a href="photos/1.jpg">
+                            <img class="item" src="two/1.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article id="video" class="tile ftg-set-2" data-type="video">
+                        <iframe class="item" width="540" height="300" src="http://www.youtube.com/embed/M4yCwlDxPtY" frameborder="0" allowfullscreen></iframe>
+                    </article>
+                    
+                    <article class="tile ftg-set-2">
+                        <a href="photos/2.jpg">
+                            <img class="item" src="two/2.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>                    
+                                        
+                    <article class="tile ftg-set-3">
+                        <a href="photos/3.jpg">
+                            <img class="item" src="two/3.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="tile ftg-set-1">
+                        <a href="photos/5.jpg">
+                            <img class="item" src="two/5.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>
+                                        
+                    <article class="tile ftg-set-2">
+                        <a href="photos/4.jpg">
+                            <img class="item" src="two/2.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>                                                         
+                                        
+                    <article class="tile ftg-set-3">
+                        <a href="photos/6.jpg">
+                            <img class="item" src="photos/t_6.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>
+                                        
+                    
+                                        
+                    <article class="tile ftg-set-3">
+                        <a href="photos/12.jpg">
+                            <img class="item" src="photos/t_12.jpg" />
+                            <div class="caption">
+                                <p>Photo title</p>
+                            </div>
+                        </a>
+                    </article>                   
+                </div>
+            </section>
+            
+            <a href="#" class="load">Load other photos</a>
+            <pre></pre>
+        
+        <script>
+
+            //instantiate Final Tiles Gallery
+            $("#final-tg").finalTilesGallery({
+                minTileWidth: 180,
+                margin: 30,
+                gridCellSize: 20,
+				autoLoadURL: 'ajax-content.html',
+				autoLoadOffset: 100,
+				onUpdate: function () {
+					
+					//Example: update ColorBox
+					//$(".tile a").colorbox();
+				}
+            });
+        </script>       
+    </body>
+</html>

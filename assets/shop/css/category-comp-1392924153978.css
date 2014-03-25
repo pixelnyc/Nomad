@@ -1,0 +1,98 @@
+.six #page-container{margin-left:0}
+.six #page-container #header{height:66px}
+#main{position:relative}
+.six #main{width:100%}
+.touch.two .content-main{width:100%}
+.touch.six .content-main{width:80%}
+.no-touch.six #footer,.no-touch.six .categoryInfo{margin-left:265px;width:70%}
+.category-content{width:82%;margin-top:20px}
+.six .category-content{width:84%;margin:45px 0 60px 55px}
+#banner{font-size:10px;text-align:center;margin-bottom:20px}
+#banner p{padding:5px}
+.six #banner{width:100%}
+.six #banner+#products{margin-top:0}
+#products{float:left;position:relative}
+#products #product-list,#products .product-list{min-height:500px}
+#products #product-list li,#products .product-list li{display:-moz-inline-stack;display:inline-block;vertical-align:bottom;*display:inline;*zoom:1;margin:0 0 37px;padding:0}
+.six #products #product-list li,.six #products .product-list li{margin:0 0 6px}
+.two #products #product-list img,.two #products .product-list img{min-height:370px;background:url("../images/loader.gif") no-repeat scroll center center transparent}
+.six #products #product-list img,.six #products .product-list img{min-height:100px;background:url("../images/loader.gif") no-repeat scroll center center transparent}
+#products #product-list h3,#products .product-list h3{text-align:center;margin-bottom:15px}
+#products #product-list h3 a.suggestionLnk,#products .product-list h3 a.suggestionLnk{display:inline;text-decoration:underline}
+#products #product-list h3 .searchTerm,#products #product-list h3 .spellcheck,#products #product-list h3 .suggestionTerm,#products .product-list h3 .searchTerm,#products .product-list h3 .spellcheck,#products .product-list h3 .suggestionTerm{font-weight:bold}
+#products #product-list .banner,#products .product-list .banner{vertical-align:top}
+#products #product-list .banner .banner-content,#products .product-list .banner .banner-content{margin-top:40%;text-transform:uppercase}
+#products #product-list .banner .banner-content.last,#products .product-list .banner .banner-content.last{margin-top:15%;padding-bottom:10px}
+.six #products #product-list .banner .banner-content.last,.six #products .product-list .banner .banner-content.last{margin-top:10%}
+#products #product-list .banner .banner-content h1,#products .product-list .banner .banner-content h1{font-size:25px;margin:20px 0 15px}
+.six #products #product-list .banner .banner-content h1,.six #products .product-list .banner .banner-content h1{font-size:18px;margin:10px 0 5px}
+#products #product-list .banner .banner-content h2,#products .product-list .banner .banner-content h2{font-size:11px}
+.six #products #product-list .banner .banner-content h2,.six #products .product-list .banner .banner-content h2{font-size:10px}
+#products #product-list .banner .banner-content p,#products .product-list .banner .banner-content p{font-size:8px}
+.six #products #product-list .banner .banner-content p,.six #products .product-list .banner .banner-content p{font-size:8px}
+#products a{display:block;overflow:hidden;cursor:pointer}
+.six #products a{text-decoration:none}
+#products img{width:98%;image-rendering:crisp-edges}
+.six #products img{width:100%;margin:0 8px}
+#products li{/*width:50%;*/ width:49%; text-align:center}
+.four #products li{width:25%}
+.six #products li{width:15.4445%}
+.six #products li.double{width:33.33333%}
+#products li.separator{width:100%}
+#products li.double{width:100%}
+#products .product-info{overflow:hidden;text-transform:uppercase;line-height:14px;position:absolute;display:none;background-color:white;padding:7px 0}
+#products .product-info .touch,.two #products .product-info{display:block;visibility:hidden;margin-bottom:15px;height:50px;line-height:14px;overflow:hidden;position:relative;text-transform:uppercase;padding-top:30px}
+.searchResultPage #products .product-info{visibility:visible;display:block}
+#products .product-info .buyNow{background:url("../images/ico_shopbag.png") no-repeat scroll left -2px transparent;display:inline-block;height:10px;margin-left:10px;width:13px}
+#products .product-info .moreColors{font-weight:bold;padding-top:3px}
+#products .product-info .labelProd{margin-top:-21px}
+.six #products .product-info .labelProd{display:inline-block}
+.six #products .product-info .item{padding:0 5px}
+.six #products .product-info .item:hover{color:black}
+#products .label-new,#products .label-people,#products .label-lookbook,#products .label-pictures{display:-moz-inline-stack;display:inline-block;vertical-align:middle;*vertical-align:auto;zoom:1;*display:inline;margin-bottom:5px}
+#products .label-new{border:1px dashed #000;padding:0 3px}
+#products .label-people,#products .label-lookbook,#products .label-pictures{font-weight:bold}
+#products .name,#products .price{display:block}
+#resultsFor{font-size:10px;margin:40px 0 0;text-align:center;float:left;position:relative;width:78%;left:4%}
+#resultsFor .searchTerm,#resultsFor .spellcheck{font-weight:bold}
+#otherResults,#noResults{float:left;min-height:375px;width:78%;text-align:center;margin-left:4%}
+#otherResults .relatedSearchInfo,#noResults .relatedSearchInfo{padding:15px 0 0}
+#otherResults a,#noResults a{font-weight:bold;text-decoration:underline}
+#sidebar{text-align:right;float:left;width:12%;margin-top:20px;padding-left:6%}
+.touch #sidebar{padding-left:2%}
+.six #sidebar{padding-left:0;width:9%;margin-top:45px}
+#sidebar #sidebar-content{display:inline-block}
+#sidebar .options{text-transform:uppercase;text-align:center;letter-spacing:.05em}
+#sidebar .options .view-options{margin:5px 0 50px}
+#sidebar .options .view-options li{display:inline-block;border:1px solid #3f3f3f;margin:0 2px}
+#sidebar .options .view-options a{display:block;padding:6px 10px;text-decoration:none}
+#sidebar .options .view-options a.selected{background-color:#eaeaea}
+#sidebar .products-total{display:block;margin-bottom:5px;text-transform:capitalize;text-align:center}
+#sidebar #filter-btn{clear:both}
+#sidebar #filter-btn button{cursor:pointer;border:1px solid #3f3f3f;background-color:transparent;color:#000;font-size:10px;padding:8px 15px;text-transform:uppercase;text-align:left}
+#sidebar #filter-btn button.filter-on{background-color:#000;color:#fff}
+#facetList .facet.selected{font-weight:bold}
+#filters{min-width:700px}
+#filters form{background-color:#FFF;overflow:hidden;position:relative;text-align:center}
+#filters form .filters-close{text-align:right;cursor:pointer}
+#filters form .filters-cont{text-align:left;display:inline-block;margin-bottom:10px}
+#filters fieldset{margin:20px 15px 20px 15px;display:-moz-inline-stack;display:inline-block;vertical-align:top;*vertical-align:auto;zoom:1;*display:inline;text-align:left}
+#filters fieldset input{position:absolute;left:-9999px}
+#filters fieldset h4{display:block;font-size:12px;margin:0 9px 15px;text-transform:uppercase;padding-left:5px}
+#filters fieldset label{display:block;color:#999;cursor:pointer;margin:0 9px 7px;padding-left:5px;font-size:11px;font-weight:normal}
+html[lang=ru] #filters fieldset label{max-width:80px}
+#filters fieldset label.selected{background:url(../images/ico_circle.png) no-repeat 0 5px;color:#000}
+.no-touch #filters fieldset label:hover{background:url(../images/ico_circle.png) no-repeat 0 5px;color:#000}
+#filters fieldset#price{text-align:left}
+#filters input{display:block;float:right}
+#filters h1,#filters h2,#filters h3{display:none}
+.footer-form{margin:20px 0 0}
+.footer-form .filters-info{float:left;margin:8px 15px 0 30px}
+.footer-form input[type=button]{cursor:pointer;-moz-box-shadow:inset 0 1px 0 0 #fff;-webkit-box-shadow:inset 0 1px 0 0 #fff;box-shadow:inset 0 1px 0 0 #fff;background-color:transparent;color:#000;font-size:10px;padding:3px 10px;text-transform:uppercase;text-shadow:1px 1px 0 #fff;margin-left:15px;float:right;border:1px solid #777}
+.footer-form input[type=button].clear{display:none}
+.categoryInfo{margin:0 auto;width:80%}
+.categoryInfo .catMainHead{font-weight:bold;text-transform:uppercase;margin-bottom:5px}
+.categoryInfo .catDesc{position:relative;top:8px;max-width:400px}
+.categoryInfo .catDesc.truncated{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;float:left}
+.categoryInfo .readMore{visibility:hidden;position:relative;top:7px;left:2px;font-weight:bold;cursor:pointer}
+.categoryInfo .clearer{clear:both}
